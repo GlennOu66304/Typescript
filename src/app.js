@@ -1,4 +1,3 @@
-"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -35,14 +34,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var _this = this;
 var container = document.getElementById("app");
-var pokemons = 100;
+var pokemons = 10;
 var fetchData = function () {
     for (var i = 1; i <= pokemons; i++) {
         getPokemon(i);
     }
 };
-var getPokemon = function (id) { return __awaiter(void 0, void 0, void 0, function () {
+var getPokemon = function (id) { return __awaiter(_this, void 0, void 0, function () {
     var data, pokemon, pokemonType, transformedPokemon;
     return __generator(this, function (_a) {
         switch (_a.label) {

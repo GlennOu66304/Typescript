@@ -1,5 +1,5 @@
 const container: HTMLElement | any = document.getElementById("app");
-const pokemons: number = 100;
+const pokemons: number = 10;
 
 interface IPokemon {
   id: number;
@@ -25,7 +25,7 @@ const getPokemon = async (id: number): Promise<void> => {
     id: pokemon.id,
     name: pokemon.name,
     image: `${pokemon.sprites.front_default}`,
-    type: pokemonType
+    type: pokemonType,
   };
 
   showPokemon(transformedPokemon);
